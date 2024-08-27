@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMindBuild</title>
+    <link rel="icon" href="./renew.png" type="image/png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #E0E0E0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        #container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1 {
+            padding-left: 20px;
+            color: #1DB954;
+        }
+        .button {
+            color: #FFFFFF;
+            background-color: #1DB954;
+            height: 40px;
+            width: 200px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #1ed760;
+        }
+        a.button-link {
+            text-decoration: none;
+        }
+        #details {
+            margin-top: 20px;
+        }
+        h3, h4, h5 {
+            margin: 10px 0;
+            color: #1DB954;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+            color: #E0E0E0;
+        }
+        ul li {
+            list-style-type: disc;
+        }
+        p {
+            color: #E0E0E0;
+        }
+        .profile-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .app-screenshot {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .cta-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .cta-button {
+            color: #FFFFFF;
+            background-color: #FF5722;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #e64a19;
+        }
+        .privacy-policy {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .privacy-policy a {
+            color: #1DB954;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .privacy-policy a:hover {
+            text-decoration: underline;
+        }
+        .privacy-policy .fa {
+            margin-left: 8px;
+        }
+        @media (max-width: 768px) {
+            .button, .cta-button {
+                width: 100%;
+                height: auto;
+                font-size: 16px;
+            }
+        }
+        .hidden-content {
+            display: none;
+        }
+        .alert {
+            display: none;
+            background-color: #FF5722;
+            color: #FFFFFF;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        .alert p {
+            margin: 0;
+            font-size: 16px;
+        }
+        .error-notification {
+            background-color: red;
+            color: #000000;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        /* Estilizar o botão Voltar ao Topo */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #1DB954;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity 0.3s, background-color 0.3s;
+        }
+        .scroll-to-top:hover {
+            background-color: #1ed760;
+        }
+        .scroll-to-top.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <img src="./renew.png" alt="Descrição da Imagem" class="profile-image">
+    <div id="container">
+        <h1>Seja bem-vindo ao site do AMindBuild</h1>
+        
+        <!-- Nova seção de notificação de erro -->
+        <div class="error-notification">
+            <p><strong>Aviso:</strong> Identificamos um erro na geração de frases, mas isso não afetará seu dispositivo e será corrigido posteriormente. Agradecemos pela compreensão e estamos trabalhando para resolver o problema.</p>
+        </div>
+
+        <div class="cta-section">
+            <img src="IMG_1932.JPG" alt="imagem de teste" style="width: 240px; height: 405px; padding-left: 1px; border-radius: 10px;"/>
+            <img src="IMG_1930.JPG" alt="imagem de teste" style="width: 240px; height: 405px; padding-right: 1px; border-radius: 10px;"/>
+            <img src="IMG_1931.JPG" alt="imagem de teste" style="width: 240px; height: 405px; padding-right: 1px; border-radius: 10px;"/>
+            <img src="IMG_1933.JPG" alt="imagem de teste" style="width: 240px; height: 405px; padding-right: 1px; border-radius: 10px;"/>
+            <h3>Baixe o APK do APP <b>AMindBuild</b></h3>
+            <a href="https://afonsobilionare.github.io/apk/AMindBuild-v1.0_.apk" class="button-link" id="download-button" download="AMindBuild.apk">
+                <button class="button">Baixar APK</button>
+            </a>
+        </div>
+
+        <div id="details">
+            <p>Esse <b>aplicativo</b> ajuda pessoas com dicas simples, mas que auxiliam no controle e identificação de problemas. Além disso, oferece dicas para pessoas que querem usar a razão para filtrar suas decisões de forma informada, e também sugestões de estudos, como o método Pomodoro. Em breve, teremos novidades e atualizações, incluindo novos conteúdos e outras melhorias.</p>
+            
+            <h4>Não perca as novidades sobre o AMindBuild</h4>
+            <ul>
+                <li>Atualizações</li>
+                <li>Novidades</li>
+                <li>Funcionalidades</li>
+                <li>Como você pode nos ajudar</li>
+            </ul>
+            
+            <h5>O que foi atualizado nesse app</h5>
+            <ul>
+                <li>Tema Personalizável: Agora você pode escolher entre diferentes temas para personalizar a aparência do app conforme suas preferências.</li>
+                <li>Conteúdo Expandido: Adicionamos mais materiais sobre inteligência emocional e racional, incluindo estudos e artigos aprofundados para enriquecer seu conhecimento.</li>
+                <li>Bloco de Notas: Incluímos uma nova função de bloco de notas, onde você pode registrar dúvidas e pensamentos. Use-o para anotar suas inquietações e sentimentos, e revisite essas anotações para refletir e identificar padrões posteriormente.</li>
+            </ul>
+            
+            <h4>Descubra Quem Está por Trás do Nosso App Incrível!</h4>
+            <p>Curioso para saber quem criou o app que você adora? Conheça a CPO, a mente por trás do desenvolvimento e inovação deste aplicativo!</p>
+            <p>Siga no Instagram: <b>chief_amindbuild</b></p>
+            
+            <h4>Quem é a AmindBuild?</h4>
+            <p>Com uma paixão por tecnologia e anos de experiência em áreas relevantes, como desenvolvimento de aplicativos e UX/UI design, a AmindBuild dedica sua expertise para criar uma experiência única e funcional. Seu trabalho é a combinação perfeita de conhecimento técnico e visão criativa.</p>
+            
+            <h4>Por Que Seguir a AmindBuild?</h4>
+            <p>Se você gosta de tecnologia e quer acompanhar as próximas inovações, fique de olho nas atualizações da AmindBuild! Siga-nos nas redes sociais para não perder nenhuma novidade, atualizações e dicas exclusivas sobre o app e muito mais.</p>
+        </div>
+        
+        <div class="cta-section">
+            <p>Gostou do nosso app? Siga-nos para mais novidades e atualizações!</p>
+            <a href="https://instagram.com/chief_amindbuild" class="cta-button" target="_blank">Siga no Instagram</a>
+        </div>
+        
+        <div class="privacy-policy">
+            <p><a href="https://afonsobilionare.github.io/Safesite/politicaSafe.html" target="_blank">Política de Privacidade</a> <i class="fa fa-external-link-alt"></i></p>
+        </div>
+    </div>
+    
+    <!-- Botão Voltar ao Topo -->
+    <button class="scroll-to-top" id="scrollToTopBtn" title="Voltar ao Topo">
+        <i class="fa fa-chevron-up"></i>
+    </button>
+    
+    <!-- Adicione o script JavaScript aqui -->
+    <script type="text/javascript">
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        document.getElementById('download-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            const userConfirmed = confirm('Este APK é compatível apenas com dispositivos Android. Clique em "OK" para iniciar o download ou "Cancelar" para interromper.');
+            if (userConfirmed) {
+                window.location.href = this.href;
+            }
+        });
+
+        function detectDevTools() {
+            const threshold = 160; // Largura mínima do DevTools
+            const widthThreshold = window.outerWidth - window.innerWidth > threshold;
+            const heightThreshold = window.outerHeight - window.innerHeight > threshold;
+
+            if (widthThreshold || heightThreshold) {
+                document.querySelector('#container').classList.add('hidden-content');
+                document.querySelector('.alert').style.display = 'block';
+            }
+        }
+
+        setInterval(detectDevTools, 1000);
+
+        // Mostrar e ocultar o botão Voltar ao Topo
+        window.addEventListener('scroll', function() {
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            if (window.scrollY > 300) { // Mostra o botão quando rolar mais de 300px
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        // Rolagem suave para o topo
+        document.getElementById('scrollToTopBtn').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+    <!-- Adicione um elemento de alerta para mostrar quando as ferramentas de desenvolvedor forem detectadas -->
+    <div class="alert">Ferramentas de desenvolvedor detectadas. O conteúdo da página foi ocultado.</div>
+</body>
+</html>
