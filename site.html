@@ -179,16 +179,6 @@
             margin: 0;
             font-size: 16px;
         }
-
-        .error-notification {
-            background-color: red;
-            color: #000000;
-            padding: 15px;
-            border-radius: 6px;
-            margin: 20px 0;
-            text-align: center;
-        }
-
         .error-notification1 {
             background-color: #1E90FF;
             color: #000000;
@@ -236,28 +226,14 @@
         <h1>Seja bem-vindo ao site do AMindBuild</h1>
 
         <!-- Nova seção de notificação de erro -->
-        <div class="error-notification">
-            <p><strong>Aviso:</strong>
-                Você que já baixou o APLICATIVO, clique em baixar e instale novamente e apague o APK antigo. Nas
-                próximas atualizações, não haverá a necessidade, já que nova atualização fará automaticamente.
-            </p>
-        </div>
         <div class="error-notification1">
             <p><strong>Aviso:</strong> Faça o download do nosso aplicativo AMindBuild e descubra novas funcionalidades
                 incríveis! Clique no botão abaixo para iniciar o download e comece a explorar todas as melhorias que
                 preparamos para você.</p>
         </div>
 
-        <div class="cta-section">
-            <img src="IMG_1932.JPG" alt="imagem de teste"
-                style="width: 240px; height: 405px; padding-left: 1px; border-radius: 10px;" />
-            <img src="IMG_1930.JPG" alt="imagem de teste"
-                style="width: 240px; height: 405px; padding-right: 1px; border-radius: 10px;" />
-            <img src="IMG_1931.JPG" alt="imagem de teste"
-                style="width: 240px; height: 405px; padding-right: 1px; border-radius: 10px;" />
-            <img src="IMG_1933.JPG" alt="imagem de teste"
-                style="width: 240px; height: 405px; padding-right: 1px; border-radius: 10px;" />
-            <h3>Baixe o APK do APP <b>AMindBuild</b></h3>
+       
+            <h2>Baixe o APK do APP <b>AMindBuild</b></h2>
             <a href="https://afonsobilionare.github.io/APK1.0./AMindBuild-v1.1_.apk" class="button-link"
                 id="download-button" download="AMindBuild.apk">
                 <button class="button">Baixar APK</button>
@@ -294,7 +270,6 @@
             <h4>Descubra Quem Está por Trás do Nosso App Incrível!</h4>
             <p>Curioso para saber quem criou o app que você adora? Conheça o desenvolvedor, a mente por trás do
                 desenvolvimento e inovação deste aplicativo!</p>
-            <p>Siga no Instagram: <b>chief_amindbuild</b></p>
 
             <h4>Quem é a AmindBuild?</h4>
             <p>Com uma paixão pela tecnologia e sólida experiência em desenvolvimento de aplicativos, a AmindBuild
@@ -309,13 +284,7 @@
         </div>
 
         <div class="cta-section">
-            <p>Gostou do nosso app? Siga-nos para mais novidades e atualizações!</p>
-            <a href="https://instagram.com/chief_amindbuild" class="cta-button" target="_blank">Siga no Instagram</a>
-        </div>
-
-        <div class="privacy-policy">
-            <p><a href="https://afonsobilionare.github.io/Safesite/politicaSafe.html" target="_blank">Política de
-                    Privacidade</a> <i class="fa fa-external-link-alt"></i></p>
+         <p style="font-weight: bold;"><a href="javascript:void(0)" onclick="politicaPrivacidade()"> Política de Privacidade </a> <i class="fa fa-external-link-alt"></i></p>
         </div>
     </div>
 
@@ -368,10 +337,107 @@
                 behavior: 'smooth'
             });
         });
+
+        function politicaPrivacidade() {
+    const privacyWindow = window.open("", "Política de Privacidade", "width=900,height=900");
+
+    privacyWindow.document.write(`
+        <html lang="pt-BR">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Política de Privacidade</title>o
+            <link rel="icon" href="1.png" type="image/png" />
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    color: #333;
+                    background-color: #f4f4f4;
+                    margin: 0;
+                    padding: 0;
+                    line-height: 1.6;
+                    user-select: none; /* Desabilita a seleção de texto */
+                }
+                .container {
+                    width: 80%;
+                    margin: auto;
+                    overflow: hidden;
+                    background: #fff;
+                    padding: 20px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                }
+                .header {
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 2px solid #3498db;
+                    padding-bottom: 10px;
+                    margin-bottom: 20px;
+                }
+                .header img {
+                    width: 40px; /* Tamanho do ícone */
+                    height: auto;
+                    margin-right: 10px;
+                    border-radius: 7px;
+                }
+                h1 {
+                    color: #2c3e50;
+                    margin: 0;
+                }
+                h2, h3 {
+                    color: #2c3e50;
+                }
+                h2 {
+                    border-bottom: 2px solid #3498db;
+                    padding-bottom: 10px;
+                    margin-bottom: 20px;
+                }
+                p {
+                    margin-bottom: 20px;
+                    font-size: 16px;
+                }
+                a {
+                    color: #3498db;
+                    text-decoration: none;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+            </style>
+        </head>
+        <body>
+            
+            <div class="container">
+                <div class="header">
+                    <img src="1.png" alt="Ícone de Privacidade">
+                    <h1>Política de Privacidade</h1>
+                </div>
+                <h2>Última atualização: 01/09/2024</h2>
+                <p>A sua privacidade é importante para nós. Esta Política de Privacidade explica como o AMindBuild lida com as informações que você fornece ao utilizar nosso aplicativo. Por favor, leia atentamente esta política para entender como suas informações são tratadas.</p>
+                <h3>Informações que Coletamos</h3>
+                <p>Nosso aplicativo, AMindBuild, é um aplicativo de conhecimento que funciona totalmente offline. Isso significa que não coletamos nenhuma informação pessoal ou dados dos usuários diretamente através do aplicativo. Todo o conteúdo e informações estão armazenados localmente no aplicativo e não são enviados a servidores externos ou bancos de dados.</p>
+                <h3>Uso de Informações</h3>
+                <p>Como não coletamos dados pessoais ou informações do usuário diretamente no aplicativo, não utilizamos informações para nenhum propósito, seja para análise, marketing ou outras finalidades. No entanto, se você entrar em contato conosco através do Instagram para fornecer feedback, as informações fornecidas por você estarão sujeitas às políticas de privacidade do Instagram.</p>
+                <h3>Compartilhamento de Informações</h3>
+                <p>Uma vez que não coletamos informações pessoais diretamente através do aplicativo, não compartilhamos nenhuma informação com terceiros. No entanto, se você optar por fornecer feedback através do Instagram, as informações compartilhadas por você nesse canal estarão sujeitas às políticas de privacidade do Instagram e poderão ser usadas de acordo com as regras e práticas da plataforma.</p>
+                <h3>Segurança</h3>
+                <p>Embora não armazenemos informações pessoais no aplicativo, tomamos precauções para proteger o conteúdo dentro do aplicativo contra acesso não autorizado e alterações. No entanto, é importante lembrar que nenhuma transmissão de dados pela internet ou sistema de armazenamento eletrônico é 100% segura.</p>
+                <h3>Atualizações da Política de Privacidade</h3>
+                <p>Podemos atualizar esta Política de Privacidade ocasionalmente para refletir mudanças nas práticas ou por outros motivos operacionais, legais ou regulamentares. Recomendamos que você verifique esta página periodicamente para se manter informado sobre quaisquer alterações.</p>
+                <h3>Seus Direitos</h3>
+                <p>Como não coletamos informações pessoais diretamente no aplicativo, não há dados pessoais sob nossa posse para os quais você possa solicitar acesso, correção ou exclusão. Se você tiver dúvidas sobre esta política ou sobre o uso do AMindBuild, não hesite em entrar em contato conosco.</p>
+                <h3>Contato</h3>
+                <p>Se você tiver alguma dúvida sobre esta Política de Privacidade ou sobre o uso do AMindBuild, entre em contato conosco pelo e-mail: <a href="mailto:diretordetecnologia12@gmail.com">diretordetecnologia12@gmail.com</a>. Se você desejar fornecer feedback e entrar em contato através do Instagram, esteja ciente de que as informações que você compartilhar nesse canal estarão sujeitas às políticas de privacidade do Instagram.</p>
+            </div>
+        </body>
+        </html>
+    `);
+
+    privacyWindow.document.close();
+}
+
     </script>
 
     <!-- Adicione um elemento de alerta para mostrar quando as ferramentas de desenvolvedor forem detectadas -->
     <div class="alert">Ferramentas de desenvolvedor detectadas. O conteúdo da página foi ocultado.</div>
 </body>
-
 </html>
